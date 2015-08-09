@@ -41,3 +41,6 @@ puts date [0...5]
 array_families = ["Mine", "Yours", "Ours"]
 puts array_families
 $end
+
+soda_type = ["sprite", "coke", "mountain dew", "fanta","dr pepper", "surge"]
+puts soda_type
