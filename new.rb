@@ -25,3 +25,6 @@ puts my_name.downcase
 puts my_name.reverse
 puts my_name.length
 $end
+
+star_wars_seven = "Jar Jar Binks Han Solo Luke lens flare"
+puts star_wars_seven[14..26]
