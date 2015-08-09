@@ -28,3 +28,16 @@ $end
 
 star_wars_seven = "Jar Jar Binks Han Solo Luke lens flare"
 puts star_wars_seven[14..26]
+
+
+rock_bottom = "Mary Kate Olsen Lindsay Lohan Charlie Sheen"
+puts rock_bottom.split
+
+date = "08/10/2015"
+puts date.split("/")
+puts date [2]
+puts date [0...5]
+
+array_families = ["Mine", "Yours", "Ours"]
+puts array_families
+$end
