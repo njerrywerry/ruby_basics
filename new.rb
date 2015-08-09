@@ -17,3 +17,11 @@ elsif your_age > 100
 else
 	puts "What is your gender?"
 end
+
+my_name = "njerry"
+puts my_name.capitalize
+puts my_name.upcase
+puts my_name.downcase
+puts my_name.reverse
+puts my_name.length
+$end
