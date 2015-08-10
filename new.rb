@@ -44,3 +44,9 @@ $end
 
 soda_type = ["sprite", "coke", "mountain dew", "fanta","dr pepper", "surge"]
 puts soda_type
+
+string_one = "Your favourite drink is "
+puts string_one + soda_type[2]
+
+puts soda_type[4] + " tastes delicious"
+puts "#{soda_type[4]} tastes delicious"
