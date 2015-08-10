@@ -50,3 +50,21 @@ puts string_one + soda_type[2]
 
 puts soda_type[4] + " tastes delicious"
 puts "#{soda_type[4]} tastes delicious"
+
+hash_brown = {
+	"topping_1" => "Sour Cream",
+	"topping_2" => "Butter",
+	"topping_3" => "Salt",
+	"topping_4" => "Ketchup"
+}
+puts hash_brown["topping_2"]
+puts hash_brown["topping_3"]
+$end
+
+first_hash = Hash.new
+first_hash["first_name"] = "Sylvia"
+first_hash["nick_name"] = "Sly"
+first_hash["last_name"] = "Kieha"
+puts first_hash["last_name"]
+$end
+
