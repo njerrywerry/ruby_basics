@@ -29,6 +29,7 @@ notify notification
 notify notification2
 
 puts "===================="
+
 #method to determine whether to call a proc
 def callProc (proc, num)
   if num > 5
@@ -40,3 +41,27 @@ hello = Proc.new do
 end
 callProc(hello, 6)
 callProc(hello, 3)
+
+puts "===================="
+
+#a method that returns procs
+def compose proc1, proc2
+  #this method receives two procs as input and returns a new proc
+  #which when called, executes the second proc and passes the result
+  #into the first proc.
+  Proc.new do |x|
+    proc1.call(proc2.call(x))
+  end
+end
+square = Proc.new do |x|
+  x * x
+end
+double = Proc.new do |x|
+  x + x
+end
+#the method call is assigned a variable name, which makes it possible for
+#both procs to receive one input.
+doubleThenSquare = compose double, square
+squareThenDouble = compose square, double
+puts doubleThenSquare.call(5)
+puts squareThenDouble.call(5)
