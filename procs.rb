@@ -39,3 +39,4 @@ hello = Proc.new do
   puts "Hello, how are you today?"
 end
 callProc(hello, 6)
+callProc(hello, 3)
