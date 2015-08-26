@@ -25,6 +25,9 @@ str.each_char do |x|
   if x == ")"
     closing.push(x)
   end
+  if closing.length > opening.length
+    return false
+  end
 end
 
 if opening.length == closing.length
@@ -38,3 +41,4 @@ end
 puts paren_matcher("(hello (world))")
 puts paren_matcher("((hello (world))")
 puts paren_matcher("hello world")
+puts paren_matcher(")hello world(")
